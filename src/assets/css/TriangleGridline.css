@@ -1,0 +1,56 @@
+body {
+  background-color: #b9b3b9;
+}
+
+.svgTopContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.svgContainer {
+  border: 1px solid #000;
+  padding: 10px;
+  position: relative;
+}
+
+.svgContainer svg polygon {
+  background-image: repeating-linear-gradient(
+      #c3c0c0 0 1px,
+      transparent 1px 10%
+    ),
+    repeating-linear-gradient(90deg, #c3c0c0 0 1px, transparent 1px 10%);
+  border-right: 1px solid #c3c0c0;
+}
+
+.svgLineAxisLabel {
+  background-color: #fff;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  padding: 5px;
+}
+
+.svgContainer rect,
+.svgContainer div[role="toolbar"],
+.svgContainer div[role="navigation"] {
+  display: none !important;
+}
+
+#id_inputContainer {
+  margin: 5px;
+}
+
+.svgZoomBtnContainer {
+  margin: 5px;
+}
+
+.svgZoomBtnContainer > button {
+  margin-right: 5px;
+}
+
+.svgGradeTxt {
+  font-family: lato;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;  
+}
